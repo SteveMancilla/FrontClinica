@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-clinic-deep-blue: #16486b;
+  --color-clinic-blue: #1f5d85;
+  --color-clinic-teal: #2f8f86;
+  --color-clinic-sky: #bfe7e5;
+  --color-clinic-bg: #f4f7fa;
+  --color-clinic-text: #263746;
+  --color-clinic-white: #ffffff;
+
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-clinic-bg text-clinic-text antialiased;
+    font-family: var(--font-sans);
+  }
+}
